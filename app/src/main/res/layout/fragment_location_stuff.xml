@@ -1,0 +1,87 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.vasquezh.stuff.Professor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_cam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        app:layout_anchor="@id/fab_cam"
+        android:layout_marginBottom="80dp"
+        app:layout_anchorGravity="top"
+        android:src="@android:drawable/ic_btn_speak_now" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        app:layout_anchor="@id/fab_voice"
+        android:layout_marginBottom="145dp"
+        app:layout_anchorGravity="top"
+        android:src="@android:drawable/ic_menu_edit" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        app:layout_anchor="@id/fab_text"
+        android:layout_marginBottom="210dp"
+        app:layout_anchorGravity="top"
+        android:src="@android:drawable/ic_menu_compass" />
+
+    <!--<LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_camera"
+            android:src="@android:drawable/ic_menu_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/button_voice"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/button_text_note"
+            android:src="@android:drawable/ic_menu_agenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/button_tag"
+            android:src="@android:drawable/ic_dialog_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>  -->
+
+</android.support.design.widget.CoordinatorLayout>
+
